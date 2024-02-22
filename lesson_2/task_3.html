@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 3</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <h2>Завдання 3</h2>
+   <h4>Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).</h4>
+   <h2>Результат</h2>
+   <script>
+      let goceryPrize = parseFloat(prompt(`Введіть ціну товару у грн`))
+      let groceruQnty = parseFloat(prompt(`Введіть кількість товару у грн`))
+      const totalPrize = goceryPrize * groceruQnty
+      const incomeTax = totalPrize * 5 / 100
+      document.write(`Загальна вартість товару = ${totalPrize} грн <br>
+      НДС = ${incomeTax} грн
+      `)
+   </script>
+</body>
+
+</html>

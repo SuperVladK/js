@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 5</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <h2>Завдання 5</h2>
+   <h4>Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.</h4>
+   <h2>Результат</h2>
+   <script>
+      let secondsPast = parseFloat(prompt(`Введіть кількість секунд, що пройшла від початку доби`))
+      const minutesPast = Math.floor(secondsPast / 60)
+      const minutesPastLeft = Math.floor (secondsPast % 60)
+      const hoursPast = Math.floor(secondsPast / 3600)
+      document.write(`${secondsPast} пройдені секунди = ${hoursPast} пройдених годин та ${minutesPastLeft} пройдені хвилини (${minutesPast} хв) <br>
+                     ${secondsPast} секунди = ${hoursPast} пройдені години
+      `)
+   </script>
+</body>
+
+</html>

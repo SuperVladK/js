@@ -1,0 +1,35 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.block,
+h2 {
+  max-width: 31.25rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+ol {
+  width: 130px;
+  font-size: 24px;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 20px;
+  padding: 20px;
+}

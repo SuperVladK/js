@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 7</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h2>Завдання 7</h2>
+   <h4>Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера дня (від 0 до 6).</h4>
+   <h2>Результат</h2>
+   <script>
+      let minMoth = 1
+      let maxMonth = 12
+      let minDay = 0
+      let maxDay = 6
+      let randomMonth = Math.floor(Math.random() * (maxMonth - minMoth + 1)) 
+      let randomDay = Math.floor(Math.random() * (maxDay - minDay + 1))
+      const dayMonthSum = randomMonth + randomDay
+      document.write(`Випадковий номер місяця - ${randomMonth} <br>
+                     Випадковий номер дня - ${randomDay} <br>
+                     Сума випадкових номерів - ${dayMonthSum}
+      `)
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 0</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h2>Завдання 0</h2>
+   <h4>Обчислити значення виразів</h4>
+   <ol>
+      <li>S1=a+12+b</li>
+      <li>S2=a+b/2a</li>
+      <li>S3=3(a+b)c</li>
+      <li>S4=sin(a-b)</li>
+   </ol> 
+   <h2>Результат</h2>
+   <script>
+      let firstNum = parseFloat(prompt(`Введіть довільне число`))
+      let secondNum = parseFloat(prompt(`Введіть друге довільне число`))
+      let thirdNum = parseFloat(prompt(`Введіть третє довільне число`))
+      const rez_1 = firstNum + 12 + secondNum
+      const rez_2 = Math.sqrt((firstNum + secondNum) / (2 * firstNum))
+      const rez_3 = Math.cbrt((firstNum + secondNum) * thirdNum)
+      const rez_4 = Math.sin(firstNum - secondNum)
+      document.write(`1 = ${rez_1} <br>
+                     2 = ${rez_2} <br>
+                     2 = ${rez_3} <br>
+                     3 = ${rez_4}
+      `)
+   </script>
+</body>
+</html>
