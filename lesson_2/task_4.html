@@ -12,7 +12,7 @@
    <h4>Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.</h4>
    <h2>Результат</h2>
    <script>
-      let santimeter = parseFloat(prompt(`Введіть кількість сантиметрів`))
+      let santimeter = parseInt(prompt(`Введіть кількість сантиметрів`))
       const meter = santimeter * 0.01
       const kilometer = meter * 0.001
       document.write(`${santimeter} сантиметри = ${meter} метра <br>

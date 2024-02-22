@@ -12,11 +12,10 @@
    <h4>Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.</h4>
    <h2>Результат</h2>
    <script>
-      let secondsPast = parseFloat(prompt(`Введіть кількість секунд, що пройшла від початку доби`))
+      let secondsPast = parseInt(prompt(`Введіть кількість секунд, що пройшла від початку доби`))
       const minutesPast = Math.floor(secondsPast / 60)
-      const minutesPastLeft = Math.floor (secondsPast % 60)
       const hoursPast = Math.floor(secondsPast / 3600)
-      document.write(`${secondsPast} пройдені секунди = ${hoursPast} пройдених годин та ${minutesPastLeft} пройдені хвилини (${minutesPast} хв) <br>
+      document.write(`${secondsPast} пройдені секунди = ${minutesPast} пройдені хвилини <br>
                      ${secondsPast} секунди = ${hoursPast} пройдені години
       `)
    </script>
