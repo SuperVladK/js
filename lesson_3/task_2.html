@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 2</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h2>Завдання 2</h2>
+   <h4>З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше, якщо ще
+   залишаються гроші, то пропонуємо купити лотерею за 4 грн.</h4>
+   <h2>Результат</h2>
+   <script>
+      let itemPrice = parseFloat(prompt(`Введіть ціну одиниці товару` , `0`))
+      let moneyAmount = parseFloat(prompt(`Введіть наявну кількість грошей` , `0`))
+      let lottery = `лотерея`
+      const lotteryPrice = 4
+      let result
+      if (moneyAmount >= itemPrice + lotteryPrice) {
+      result = (`Не бажаєте придбати ще й ${lottery} за ${lotteryPrice} грн?`)
+      } else if (moneyAmount < itemPrice) {
+      result = (`Вибачте, але у Вас не вистачає грошей.`)
+      } else {
+      result = (`Дякуємо за покупку... <br> А може у Вас і на ${lottery} щось знайдетсья, якщо пошукати?`) 
+      }
+      document.write(result)
+   </script>
+</body>
+
+</html>

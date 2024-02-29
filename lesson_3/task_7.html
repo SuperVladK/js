@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 7</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h2>Завдання 7</h2>
+   <h4>З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься.</h4>
+   <h2>Результат</h2>
+   <script>
+      let monthName = parseInt(prompt(`Введіть НОМЕР місяця.`))
+      let winter = `зима`
+      let spring = `весна`
+      let summer = `літо`
+      let autumn = `осінь`
+      let result
+      if (monthName <= 2 || monthName === 12) {
+         result = `Ваша пора ${winter}.`
+      }
+      else if (monthName <= 5) {
+         result = `Ваша пора ${spring}.`
+      }
+      else if (monthName <= 8) 
+         result = `Ваша пора ${summer}.`
+      
+      else if (monthName <= 11) 
+         result = `Ваша пора ${autumn}.`
+      document.write(result)
+   </script>
+</body>
+</html>

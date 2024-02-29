@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 5</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <h2>Завдання 5</h2>
+   <h4>З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на
+   екран назву транспортного засобу, яким він може керувати.</h4>
+   <h2>Результат</h2>
+   <script>
+      let drivingLicenseCategory = prompt(`Введіть категорію водійських прав.`)
+      let result
+      if (drivingLicenseCategory.toUpperCase() === `A`) {
+         result = `Людина може керувати мотоциклом.` }
+      else if (drivingLicenseCategory.toUpperCase() === `B`) {
+         result = `Людина може керувати легковим автомобілем.`}
+      else if (drivingLicenseCategory.toUpperCase() === `C`) {
+         result = `Людина може керувати вантажним автомобілем.`}
+      else {
+         result = `Ви ввели некоректне значення`}
+      document.write(result)
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 6</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <h2>Завдання 6</h2>
+   <h4>З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.</h4>
+   <h2>Результат</h2><script>
+      let dayWeek = parseInt(prompt(`ВВедіть НОМЕР дня тижня (від 1 до 7)`))
+      let monday = `понеділок`
+      let tuesday = `вівторок`
+      let wednesday = `середа`
+      let thursday = `четвер`
+      let friday = `пʼятниця`
+      let saturday = `субота`
+      let sunday = `неділя`
+      let result
+      if (dayWeek === 1) {
+         result = `Ваш день ${monday}.`
+      }
+      if (dayWeek === 2) {
+         result = `Ваш день ${tuesday}.`
+      } 
+      if (dayWeek === 3) {
+         result = `Ваш день ${wednesday}.`
+      }
+      if (dayWeek === 4) {
+         result = `Ваш день ${thursday}.`
+      }
+      if (dayWeek === 5) {
+         result = `Ваш день ${friday}.`
+      }
+      if (dayWeek === 6) {
+         result = `Ваш день ${saturday}.`
+      }
+      if (dayWeek === 7) {
+         result = `Ваш день ${s}.`
+      }
+      document.write(result)
+   </script>
+</body>
+
+</html>
