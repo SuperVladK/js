@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 11</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h2>Завдання 11</h2>
+   <h4>Знайти суму 5 непарних чисел, що знаходяться між заданими користувачем числами.</h4>
+   <h2>Результат</h2>
+   <script>
+      let minNum = parseInt(prompt('Введіть довільне мінімальне число.'))
+      let maxNum = parseInt(prompt('Введіть довільне максимальне число.'))
+      let sumOdd = 0
+      for (let i = 1; i <= 5; i++) {
+         let randNum = minNum + Math.floor(Math.random() * (maxNum + minNum + 1))
+         if (i % 2 !== 0) 
+            sumOdd += randNum
+      }
+      document.write(`Сума 5 непарних чисел, що знаходяться між заданими числами = ${sumOdd}`)
+
+         // minRangeNumber
+            // maxRangeNumber
+            // sum
+            // const minRangeNumber = parseInt(prompt('minRangeNumber'))
+            // const maxRangeNumber = parseInt(prompt('maxRangeNumber'))
+
+            // let sum = 0
+            // for (let i = 0; i < 5; ) {
+            //   const randNum =
+            //     minRangeNumber +
+            //     Math.floor(Math.random() * (maxRangeNumber - minRangeNumber + 1))
+
+            //   if (randNum % 2 !== 0) {
+            //     sum += randNum
+            //     i++
+            //   }
+            // }
+            // document.write(`Sum=${sum}`)
+   </script>
+</body>
+
+</html>

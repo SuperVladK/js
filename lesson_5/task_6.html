@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 6</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h2>Завдання 6</h2>
+   <h4>Вивести 3 таблиці (по 3 рядки і 3 стовпці у кожній) за зразком</h4>
+   <h2>Результат</h2>
+   <script>
+      let cacheNum = 1
+      for (table = 1; table <= 3; table++) {
+      document.write('<table border="2 solid black" style="display: inline-block">')
+         for (let row = 1; row <= 3; row++) {
+            document.write('<tr>')
+            for (let cell = 1; cell <= 3; cell++) {
+               document.write(`<td width="30px">${cacheNum}</td>`)
+               cacheNum++
+            }
+            document.write('</tr>')
+         }
+      document.write('</table> <br>')}
+   </script>
+</body>
+
+</html>

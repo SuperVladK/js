@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 14</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <h2>Завдання 14</h2>
+   <h4>.Каса. Користувачу повідомляють суму, яку йому треба сплатити. Користувач поступово вводить суму грошей до тих пір, поки
+   суми не буде достатньо для оплати товарів (кожного разу користувачу повідомляють, яку ще суму потрібно ввести).
+</h4>
+   <h2>Результат</h2>
+   <script>
+   const totalSum = parseInt(prompt('Введіть суму, яку треба сплатити'))
+   let personMoney = 0
+   let restMoney
+   while (personMoney < totalSum) {
+      restMoney = totalSum - personMoney
+      neededMoney = parseFloat(prompt(`Залишилось сплатити ${restMoney} грн`))
+      personMoney += neededMoney
+   } 
+   document.write(`Ви сплатили ${totalSum} грн`)
+   </script>
+</body>
+
+</html>

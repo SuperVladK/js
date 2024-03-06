@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 10</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h2>Завдання 10</h2>
+   <h4>Знайти суму всіх непарних чисел, що знаходяться між заданими користувачем числами.</h4>
+   <h2>Результат</h2>
+   <script>
+      let minNum = parseInt(prompt('Введіть довільне мінімальне число.'))
+      let maxNum = parseInt(prompt('Введіть довільне максимальне число.'))
+      let sum = 0
+      for (let i = minNum + 1; i < maxNum; i++) {
+         if (i % 2 !== 0) {
+         sum += i
+         }
+      }
+      document.write(`Cума всіх непарних чисел, що знаходяться між заданими Вами числами = ${sum}`)
+   </script>
+</body>
+
+</html>

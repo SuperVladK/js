@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 13</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <h2>Завдання 13</h2>
+   <h4>. Морський бій. Комп’ютер випадково розташовує одиночний корабель на полі розміром N*M. Маючи К снарядів користувач
+   намагається потопити корабель.
+</h4>
+   <h2>Результат</h2>
+   <script>
+   const rowNumber = parseInt(prompt('Кількість рядків'))
+   const columnNumber = parseInt(prompt('Кількість стовбців'))
+   let missileNumber = parseInt(prompt('Кількість снарядів'))
+   const shipRowPosition = 1 + Math.floor(Math.random() * rowNumber)
+   const shipColumnPosition = 1 + Math.floor(Math.random() * columnNumber)
+   let userRow, userColumn, shellResult
+   do {
+      userRow = parseInt(prompt('Вісь "Х"'))
+      userColumn = parseInt(prompt('Вісь "Y"'))
+      missileNumber--
+      shellResult = userRow === shipRowPosition && userColumn === shipColumnPosition
+      if (!shellResult)
+         alert(`Не попав! Спробуй ще!`)
+   } while (!shellResult && missileNumber > 0)
+
+   if (shellResult) alert('Перемога')
+   else alert('Програш')
+
+
+
+
+   </script>
+</body>
+
+</html>
