@@ -15,7 +15,7 @@
          const rangeEnd = 4
          let imgPath
          let result
-         let ressultNum
+         let ressultNum = 0
          document.write('<div class="img">') 
          for (let i = 1; i <= 3; i++) {
             let imgNumber = rangeStart + Math.floor(Math.random() * (rangeEnd - rangeStart + 1))
@@ -27,14 +27,19 @@
             case 3: 
                imgPath = `./img/img${imgNumber}.jpeg`;
             case 4:
-               imgPath = `./img/img${imgNumber}.jpeg`;
+               imgPath = `./img/img${imgNumber}.jpeg`; 
             }
+            switch (imgNumber) {
+               case 111: ressultNum = 100;
+               case 222: ressultNum = 200;
+               case 333: ressultNum = 500;
+               case 444: ressultNum = 1000;
+               }
             document.write(`<div class="img"><img src="${imgPath}"/></div>`)
             document.write('</div>')
-             
          }
-
-         
+         document.write(`Ви виграли ${ressultNum} грн.`)
    </script>
+   <h1>Тут я страшно натупив і немає сил вже знайти помилку(((((</h1>
 </body>
 </html>

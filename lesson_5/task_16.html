@@ -14,9 +14,19 @@
    вивести величину прибутку протягом кожного окремого тижня.</h4>
    <h2>Результат</h2>
    <script>
- 
-
-
+      let weekProfit
+      let totalProfit
+      let weekQnt = parseInt(prompt('Введіть кількість тижнів'))
+      weekProfit = 0
+      for (week = 1; week <= weekQnt; week++) {
+         for (day = 1; day <=7; day++) {
+            let dayProfit = parseFloat(prompt(`Введіть виручку за ${day} день ${week} тижня`))
+            weekProfit = dayProfit * 7
+         }
+         totalProfit = weekQnt * weekProfit
+         document.write(`Виручка за тиждень № ${week} складає ${weekProfit} грн. `)
+      }  
+      document.write(`Загальна виручка за період складає ${totalProfit} грн.`)
    </script>
 </body>
 

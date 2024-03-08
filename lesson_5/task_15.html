@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Завдання 15</title>
    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
    <h2>Завдання 15</h2>
    <h4>.Користувача поступово вводить показники температури протягом року. Знайти середню температуру.</h4>
    <h2>Результат</h2>
    <script>
- 
-
+      let highMonthDeg, lowMonthDeg, highYearDeg, lowYearDeg, averageYearDeg 
+      highYearDeg = 0
+      lowYearDeg = 0
+      document.write(`<ol>`)
+      for (i = 1; i <= 12; i++) {
+        highMonthDeg = parseFloat(prompt(`Введіть максимальну температуру повітря у ${i} місяці року`))
+        lowMonthDeg = parseFloat(prompt(`Введіть мінімальну температуру повітря у ${i} місяці року`))
+        document.write(`<li>Max t = ${highMonthDeg} degrees, Min t = ${lowMonthDeg} degrees.</li>`)
+        highYearDeg += highMonthDeg
+        lowYearDeg += lowMonthDeg
+        console.log(`${highYearDeg}`)
+        console.log(`${lowYearDeg}`)
+        averageYearDeg = (highYearDeg + lowYearDeg) / 2
+      }
+      document.write(`</ol>`)
+      document.write(`Середня річна температура повітря складає ${averageYearDeg} градусів.`)
 
    </script>
 </body>
-
 </html>
