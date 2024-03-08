@@ -14,11 +14,6 @@ h2 {
   font-size: 1.875rem;
 }
 
-ol {
-  width: 130px;
-  font-size: 24px;
-}
-
 a {
   font-size: 20px;
   text-decoration: none;
@@ -44,3 +39,21 @@ img {
   width: 150px;
 }
  
+.table {
+  border: 2px solid rgb(79, 109, 207);
+
+}
+
+.cell {
+  border: 2px solid lightblue;
+  background-color: aliceblue;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.table_pack {
+  display: flex;
+  flex-direction: row;
+}
