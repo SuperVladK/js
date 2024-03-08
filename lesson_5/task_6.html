@@ -11,18 +11,20 @@
    <h4>Вивести 3 таблиці (по 3 рядки і 3 стовпці у кожній) за зразком</h4>
    <h2>Результат</h2>
    <script>
+      document.write(`<div class="table_pack">`)
       let cacheNum = 1
       for (table = 1; table <= 3; table++) {
-      document.write('<table border="2 solid black" style="display: inline-block">')
+      document.write('<table class="table">')
          for (let row = 1; row <= 3; row++) {
             document.write('<tr>')
             for (let cell = 1; cell <= 3; cell++) {
-               document.write(`<td width="30px">${cacheNum}</td>`)
+               document.write(`<td class="cell">${cacheNum}</td>`)
                cacheNum++
             }
             document.write('</tr>')
          }
       document.write('</table> <br>')}
+      document.write(`</div>`)
    </script>
 </body>
 
