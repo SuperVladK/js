@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 9</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h2>Завдання 9</h2>
+   <h4>Дано покази температур (довільна кількість). Розробити функцію, яка дозволить підрахувати кількість від’ємних показів температури.</h4>
+   <h2>Результат</h2>
+   <script>
+    function getTemperatureResult(tempMeanQnt, tempValue, belowZeroTempValueQnt) {
+         tempMeanQnt = parseInt(prompt('Введіть кількість показників температури'))
+         belowZeroTempValueQnt = 0
+         for (i = 1; i <= tempMeanQnt; i++) {
+            tempValue = parseFloat(prompt(`Введіть ${i} показник темпаратури`))
+            if (tempValue <0) belowZeroTempValueQnt++
+         }
+         return belowZeroTempValueQnt
+      }
+      let belowZeroTempValueQnt = getTemperatureResult()
+      document.write(`Кількість відʼємних теипературних значень серед заданих = ${belowZeroTempValueQnt}`)
+   </script>
+</body>
+
+</html>

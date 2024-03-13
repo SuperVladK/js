@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 7</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h2>Завдання 7</h2>
+   <h4>Створити функцію, яка випадковим чином виводить на екран одне із 4 зображень (шляхи до зображень передаються у функцію)</h4>
+   <h2>Результат</h2>
+   <script>
+      function getPicture(pictureNum, picture){
+         pictureNum = min + Math.floor(Math.random() * (max - min + 1))
+         picture = `<img src="img/img${pictureNum}.jpeg" alt="image">`
+         return picture
+      }
+      const min = 1
+      const max = 4
+      let result = getPicture()
+      document.write(`${result}`)
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 10</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h2>Завдання 10</h2>
+   <h4>Дано покази температур (довільна кількість). Розробити функцію, яка дозволить знайти середнє значення для додатних показів температури.</h4>
+   <h2>Результат</h2>
+   <script>
+      function getTemperatureResult (tempValueQnt, totalTempValue, tempValue, averageTempValue){
+         tempValueQnt = parseInt(prompt('Введіть кількість показників температури'))
+         totalTempValue = 0
+         for (i = 1; i <= tempValueQnt; i++){
+         tempValue = parseFloat(prompt(`Введіть ${i} показник темпаратури`))
+         totalTempValue+= tempValue
+         }
+         averageTempValue = totalTempValue / tempValueQnt
+         return averageTempValue
+      }
+      let averageTempValue = getTemperatureResult()
+      document.write(`Середнє значення додатних показів температури = ${averageTempValue}`)
+   </script>
+</body>
+
+</html>

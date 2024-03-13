@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 8</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <img src="" alt="">
+   <h2>Завдання 8</h2>
+   <h4>Створити функцію, яка виводить банер: у функцію передаються: зображення, заголовок та посилання, куди переходимо при кліку на зображення, тег img повинен знаходитись у середині тега a: <a> <img src=”шлях”> </a></h4>
+   <h2>Результат</h2>
+   <script>
+      function getBanner(headline, link, img){
+         return `<a ${link}><h4>${headline}</h4><img ${img} alt"image""></a>`
+      }
+      let headline = prompt('Введіть заголовок')
+      let link = prompt('Введіть адресу посилання у форматі , href="" ')
+      let img = prompt('Введіть адрсеу зображення у форматі , src="" ')
+      let result = getBanner(headline, link, img)
+      document.write(`${result}`)
+    </script>
+</body>
+
+</html>

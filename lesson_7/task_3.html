@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 3</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <h2>Завдання 3</h2>
+   <h4>Створити окремі функції, які для 4 чисел знаходять:
+   1-суму;
+   2-добуток;
+   3-середнє арифметичне;
+   4-мінімальне значення.
+</h4>
+   <h2>Результат</h2>
+   <script>
+      function getSum(numOne, numTwo, numThree, numFour) {
+         let result = numOne + numTwo + numThree + numFour
+         return result
+      }
+      function getMultiply(numOne, numTwo, numThree, numFour) {
+         let result = numOne * numTwo * numThree * numFour
+         return result
+      }
+      function getAverage(numOne, numTwo, numThree, numFour) {
+         let result = (numOne + numTwo + numThree + numFour) / 4
+         return result
+      }
+      function getMinMean(numOne, numTwo, numThree, numFour) {
+         let result 
+         if (numOne < numTwo) result = numOne
+         else if (numThree < numOne) result = numThree
+         else if (numFour < numThree) result = numFour
+         else numTwo
+         return result
+      }
+      let numOne = parseFloat(prompt('Введіть перше довільне число'))
+      let numTwo = parseFloat(prompt('Введіть друге довільне число'))
+      let numThree = parseFloat(prompt('Введіть третє довільне число'))
+      let numFour = parseFloat(prompt('Введіть четверте довільне число'))
+      let resultSum = getSum(numOne, numTwo, numThree, numFour)
+      let resultMultiply = getMultiply(numOne, numTwo, numThree, numFour)
+      let resultAverage = getAverage(numOne, numTwo, numThree, numFour)
+      let resultMinMean = getMinMean(numOne, numTwo, numThree, numFour)
+      document.write(`Сума заданих чисел = ${resultSum}<br>Добуток заданих чисел = ${resultMultiply}<br>Середнє арифметичне від заданих чисел = ${resultAverage}<br>Мінімальне значення між заданими числами = ${resultMinMean}`)
+   </script>
+</body>
+
+</html>

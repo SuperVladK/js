@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 5</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h2>Завдання 5</h2>
+   <h4>Створити окремі функції, які переводять:
+   Сантиметри у дюйми;
+   Кілограми у фунти;
+   Кілометри у милі.</h4>
+   <h2>Результат</h2>
+   <script>
+      function getInchesFromSantimetr(santimetr) {
+         let inches = Math.floor(santimetr * 0.393701)
+         return inches
+      }
+      function getPoundsFromKilograms(kilograms) {
+         let pounds = Math.floor(kilograms * 0.45)
+         return pounds
+      }
+      function getMilesFromKilometres(kilometres) {
+         let miles = Math.floor(kilometres * 0.621371)
+         return miles
+      }
+      let santimetr = parseInt(prompt('Введіть кількість сантиметрів'))
+      let kilograms = parseInt(prompt('Введіть кількість кілограммів'))
+      let kilometres = parseInt(prompt('Введіть кількість кілометрів'))
+      let inches = getInchesFromSantimetr(santimetr)
+      let pounds = getPoundsFromKilograms(kilograms)
+      let miles = getMilesFromKilometres(kilometres)
+      document.write(`<ul>
+         <li>${santimetr} сантиметрів = ${inches} дюймів.</li>
+         <li>${kilograms} кілограмів = ${pounds} фунтів.</li>
+         <li>${kilometres} кілометрів = ${miles} сухопутних миль.<?li>
+            </ul>`)
+   </script>
+</body>
+
+</html>

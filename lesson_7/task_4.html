@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 4</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h2>Завдання 4</h2>
+   <h4>Створити функцію, яка для 3 заданих чисел знаходить одночасно декілька результатів: кількість парних, кількість додатних, кількість більших за 100.</h4>
+   <h2>Результат</h2>
+   <script>
+      function getResult(pairNum, positiveNum, moreThanHundredNum, yourNum){
+            pairNum = 0
+            positiveNum = 0
+            moreThanHundredNum = 0
+            for (let i = 1; i <= 3; i++) {
+            yourNum = parseFloat(prompt(`Введіть ${i} довільне число`))
+         if (yourNum % 2 === 0) pairNum +=1
+         if (yourNum > 0) positiveNum +=1
+         if (yourNum > 100) moreThanHundredNum +=1
+          }
+         return `Кількість парних = ${pairNum}<br>
+                  Кількість додатних = ${positiveNum}<br>
+                  Кількість більших за 100 = ${moreThanHundredNum}`
+         }
+      let result = getResult()
+      document.write(`${result}`)
+   </script>
+</body>
+
+</html>

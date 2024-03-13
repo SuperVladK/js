@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Завдання 2</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <h2>Завдання 2</h2>
+   <h4>Створити функцію, яка за номером дня дозволяє з’ясувати чи є цей день робочим.</h4>
+   <h2>Результат</h2>
+   <script>
+      function getDayMean(dayNum) {
+         let result
+         if (dayNum <= 5) result = 'робочий'
+         else result = 'вихідний'
+         return result
+      }
+      let dayNum = parseInt(prompt('Введіть номер дня'))
+      conclusion = getDayMean(dayNum)
+      document.write(`Ваш день ${conclusion}`)
+   </script>
+</body>
+</html>
